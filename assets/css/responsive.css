@@ -1,0 +1,215 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .header-mobile {
+        display: none;
+    }
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 991px) {
+    .header .nav {
+        display: none;
+    }
+
+    .header .body {
+        position: relative;
+    }
+
+    .header .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header .action {
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+
+    .header .toggle-menu {
+        width: 30px;
+        margin-bottom: 26px;
+        color: #666;
+    }
+
+    .header-mobile .menu-overlay {
+        inset: 0 0 0 0;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s ease;
+    }
+
+    .header-mobile .menu-drawer {
+        position: fixed;
+        inset: 0 30% 0 0;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+        padding: 60px;
+    }
+
+    .header-mobile .menu-drawer .logo {
+        /* width: 123px;
+        height: 25.5px; */
+        width: 164px;
+        height: 34px;
+    }
+
+    .header-mobile .menu-drawer ul {
+        margin-top: 60px;
+    }
+
+    .header-mobile .menu-drawer ul li a {
+        font-size: 2.3rem;
+        font-weight: 500;
+        color: #000;
+        margin: 40px 0;
+        display: block;
+    }
+
+    .menu-checkbox:checked~.menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked~.menu-drawer {
+        transform: translateX(0);
+    }
+
+    .hero .hero_left .images {
+        width: 313px;
+        height: 456px;
+    }
+
+    .hero .hero_left .stats {
+        bottom: 76px;
+        right: -27px;
+    }
+
+    .hero_right .heading {
+        font-size: 3rem;
+    }
+
+    .hero_right .desc {
+        font-size: 1.3rem;
+    }
+
+    .hero_right .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero_right .row .watch {
+        margin-left: -28px;
+    }
+
+    .hero_right .block strong:last-child {
+        margin-left: 0;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .course .box {
+        padding: 120px 0;
+    }
+
+    .course .list {
+        flex-wrap: wrap;
+    }
+
+    .course .item {
+        width: 70%;
+        flex: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .course .item .images {
+        width: 520px;
+    }
+
+    .feedback .box .student .name {
+        font-size: 2.2rem;
+    }
+
+    .feedback .box .feedback_block {
+        margin-top: 30px;
+    }
+
+    .feedback .box .feedback_block .comment {
+        width: 500px;
+        font-size: 1.9rem;
+    }
+    .overview .box_1  {
+        margin-top: 100px;
+    }
+    .overview .box_1 img {
+        width: calc(270px / 1.5);
+        height: calc(405px / 1.5);
+    }
+    .overview .box_1 img:first-child {
+        height: calc(405px / 1.5);
+        margin-top: 100px;
+    }
+
+    .overview .box_1 .text_block {
+        margin-left: 50px;
+    }
+    .overview .box_1 .text_block .title {
+        font-size: 3rem;
+    }
+    .overview .box_1 .text_block .sub_title {
+        font-size: 1.3rem;
+    }
+    .overview .box_1 .text_block p {
+        font-size: 1.3rem;
+    }
+    .overview .box_2 .text_block .title {
+        font-size: 3rem;
+    }
+    .overview .box_2 .text_block .subtitle {
+        font-size: 1.3rem;
+    }
+    .blog .body .list {
+        flex-direction: column;
+    }
+    .blog .body .item {
+        flex: 0;
+        width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blog .body .item img {
+        width: 520px;
+    }
+    .blog .body .item .info_block .important_text {
+        font-size: 1.5rem;
+    }
+    .footer .box {
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+    .footer .box .columns:nth-child(2) {
+        margin-right: 130px;
+    }
+    .footer .box .columns:nth-child(3) {
+        margin-left: 0;
+        margin-right: 130px;
+    }
+    .footer .box .columns:last-child {
+        margin-left: 130px;
+    }
+    .footer .full_line {
+        width: 100%;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Mobile */
+@media screen and (max-width: 767px) {}

@@ -24,6 +24,7 @@ a {
     width: 1170px;
     margin: 0 auto;
     max-width: 100%;
+    padding: 0 30px;
 }
 
 .line_clamp {
@@ -309,24 +310,25 @@ a {
     margin-top: 55px;
 }
 
-.course .body .list {
+.course .list {
     display: flex;
     gap: 30px;
+    margin-top: 55px;
 }
 
-.course .body .item {
+.course .item {
     flex: 1;
-    width: calc((100% - 60) / 3);
+    background: #fff;
     border: 1px solid #E2DFDA;
     border-radius: 12px;
 }
 
-.course .body .item:hover {
-    border: 1px solid #fff;
+.course .item:hover {
+    border-color: transparent;
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
-.course .body .item .images {
+.course .item .images {
     display: inline-block;
     width: 370px;
     height: 278px;
@@ -334,37 +336,37 @@ a {
     border-radius: 12px 12px 0px 0px;
 }
 
-.course .body .item_content {
+.course .item_content {
     padding: 16px 22px 22px 22px;
     border-style: solid;
 }
 
-.course .body .item_content .row {
+.course .item_content .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.course .body .item_content .title {
+.course .item_content .title {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-.course .body .item_content .stars {
+.course .item_content .stars {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.course .body .item_content .stars .num_of_star {
+.course .item_content .stars .num_of_star {
     color: #FEA31B;
     font-size: 1.6rem;
     font-weight: 400;
     margin-left: 6px;
 }
 
-.course .body .desc {
+.course .desc {
     color: #5F5B53;
     font-size: 1.4rem;
     font-weight: 400;
@@ -372,11 +374,11 @@ a {
     margin-top: 6px;
 }
 
-.course .body .row:last-child {
+.course .row:last-child {
     margin-top: 12px;
 }
 
-.course .body .row strong {
+.course .row strong {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
