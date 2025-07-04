@@ -306,10 +306,6 @@ a {
     background: #FFB900;
 }
 
-.course .body {
-    margin-top: 55px;
-}
-
 .course .list {
     display: flex;
     gap: 30px;
@@ -780,12 +776,14 @@ a {
     font-weight: 400;
     line-height: 1.85;
 }
+
 .footer .box .columns .list .item,
 .footer .box .columns .info {
     margin-top: 12px;
 }
+
 .footer .box .columns .list .item:first-child,
-.footer .box .columns .first{
+.footer .box .columns .first {
     margin-top: 28px;
 }
 
