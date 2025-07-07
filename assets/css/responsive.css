@@ -3,6 +3,9 @@
     .header-mobile {
         display: none;
     }
+    .only_mobile {
+        display: none;
+    }
 }
 
 /* Tablet and mobile */
@@ -145,13 +148,16 @@
         width: 500px;
         font-size: 1.9rem;
     }
-    .overview .box_1  {
+
+    .overview .box_1 {
         margin-top: 100px;
     }
+
     .overview .box_1 img {
         width: calc(270px / 1.5);
         height: calc(405px / 1.5);
     }
+
     .overview .box_1 img:first-child {
         height: calc(405px / 1.5);
         margin-top: 100px;
@@ -160,56 +166,186 @@
     .overview .box_1 .text_block {
         margin-left: 50px;
     }
+
     .overview .box_1 .text_block .title {
         font-size: 3rem;
     }
+
     .overview .box_1 .text_block .sub_title {
         font-size: 1.3rem;
     }
+
     .overview .box_1 .text_block p {
         font-size: 1.3rem;
     }
+
     .overview .box_2 .text_block .title {
         font-size: 3rem;
     }
+
     .overview .box_2 .text_block .subtitle {
         font-size: 1.3rem;
     }
+
     .blog .body .list {
         flex-direction: column;
     }
+
     .blog .body .item {
         flex: 0;
         width: 520px;
         margin-left: auto;
         margin-right: auto;
     }
+
     .blog .body .item img {
         width: 520px;
     }
+
     .blog .body .item .info_block .important_text {
         font-size: 1.5rem;
     }
+
     .footer .box {
         flex-wrap: wrap;
         row-gap: 70px;
     }
+
     .footer .box .columns:nth-child(2) {
         margin-right: 130px;
     }
+
     .footer .box .columns:nth-child(3) {
         margin-left: 0;
         margin-right: 130px;
     }
+
     .footer .box .columns:last-child {
         margin-left: 130px;
     }
+
     .footer .full_line {
         width: 100%;
     }
 }
+
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .only_mobile {
+        display: none;
+    }
+}
 
 /* Mobile */
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .header-mobile .menu-drawer {
+        padding: 40px;
+    }
+    .header-mobile .menu-drawer ul li a {
+        margin: 25px 0;
+    }
+    .only_mobile {
+        border-top: 1px solid #666;
+    }
+    .header-btn {
+        display: none;
+    }
+    .hero .body {
+        flex-direction: column;
+    }
+    .hero .hero_left .stats {
+        right: -182px;
+        bottom: 39px;
+    }
+    .hero_right {
+        padding-left: 0;
+        width: 100%;
+    }
+    .hero_right .heading {
+        font-size: 4.6rem;
+        text-align: center;
+    }
+    .hero_right .desc_1{
+        text-align: center;
+    }
+    .hero_right .row .action, 
+    .hero_right .row .watch {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero_right .row .watch .button {
+        margin-left: 0;
+    }
+    .hero_right .block .desc_2 strong {
+        font-size: 6.1rem;
+    }
+    .course .heading {
+        flex-wrap: wrap;
+    }
+    .course .heading .sub_title {
+        width: 90%;
+    }
+    .course .heading .columns_2 {
+        margin: 20px auto;
+    }
+    .course .heading .navigation:first-child {
+        margin-left: 0;
+    }
+    .course .list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .course .item {
+        width: 90%;
+    }
+    .course .item .images {
+        width: 100%;
+    }
+    .feedback .box .feedback_block .comment {
+        width: 100%;
+    }
+    .overview .box_2,
+    .overview .box_1 {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .overview .box_1 img {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .overview .box_1 img:nth-child(2) {
+        display: none;
+    }
+    .overview .box_1 .text_block {
+        margin-left: 0;
+    }
+    .overview .box_2 .text_block {
+        width: 100%;
+    }
+    .overview .box_2 img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    .blog .body .item {
+        width: 90%;
+    }
+
+    .blog .body .item img {
+        width: 100%;
+    }
+    .blog .heading .sub_title {
+        width: 250px;
+    }
+    .footer .box .columns, 
+    .footer .box .brand_info_block, 
+    .footer .box .columns:last-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .footer .end_footer {
+        font-size: 1.2rem;
+        width: 306px;
+    }
+}
