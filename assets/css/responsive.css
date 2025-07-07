@@ -6,6 +6,9 @@
     .only_mobile {
         display: none;
     }
+    .hero_right .mobile-block {
+        display: none;
+    }
 }
 
 /* Tablet and mobile */
@@ -234,6 +237,9 @@
     .only_mobile {
         display: none;
     }
+    .hero_right .mobile-block {
+        display: none;
+    }
 }
 
 /* Mobile */
@@ -276,8 +282,30 @@
     .hero_right .row .watch .button {
         margin-left: 0;
     }
-    .hero_right .block .desc_2 strong {
-        font-size: 6.1rem;
+    .hero_right .block {
+        display: none;
+    }
+    .hero_right .mobile-block {
+        margin-top: 48px;
+    }
+
+    .hero_right .mobile-block .desc_2 {
+        color: #5F5B53;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+
+    .hero_right .mobile-block strong {
+        color: #171100;
+        font-family: var(--font-heading);
+        font-size: 6rem;
+        font-weight: 700;
+        margin-right: 14px;   
+        display: inline-block
+    }
+    .hero_right .mobile-block strong{
+        margin-top: 30px;
     }
     .course .heading {
         flex-wrap: wrap;
